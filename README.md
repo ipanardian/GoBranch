@@ -4,7 +4,6 @@
 [![Status](https://img.shields.io/badge/status-beta-green.svg)](https://github.com/ipanardian/gobranch/releases)
 [![Go](https://img.shields.io/badge/go-v1.10.x-blue.svg)](https://gitter.im/ipanardian/gobranch)
 [![GitHub license](https://img.shields.io/badge/license-MIT-red.svg)](https://github.com/ipanardian/GoBranch/blob/master/LICENSE)
-[![Github All Releases](https://img.shields.io/github/downloads/ipanardian/GoBranch/total.svg)](https://github.com/ipanardian/GoBranch)
 
 
 
