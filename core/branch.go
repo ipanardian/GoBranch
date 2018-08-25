@@ -82,7 +82,13 @@ func createBranchName(answer Answers) string {
 		fmt.Println("error: Branch name can not be empty.")
 		os.Exit(1)
 	}
-	newBranchName := ToValidBranchName(answer.branchName, namingConventionSelected)
+
+	isCustom := false
+	if answer.branchType == branchType.Custom {
+		isCustom = true
+	}
+
+	newBranchName := ToValidBranchName(answer.branchName, namingConventionSelected, isCustom)
 	if answer.branchType != branchType.Custom {
 		newBranchName = strings.Join([]string{answer.branchType, newBranchName}, typeConventionSelected)
 	}
