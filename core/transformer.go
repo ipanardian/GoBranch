@@ -55,13 +55,20 @@ func TransformInput(ans interface{}) interface{} {
 }
 
 //ToValidBranchName Transform string to valid git branch name
-func ToValidBranchName(s string, convention string) string {
-	s = strings.Join(strings.Fields(s), " ")
-	reg, err := regexp.Compile("[^a-zA-Z0-9/ ]+")
+func ToValidBranchName(s string, convention string, isCustom bool) string {
+	var pattern string
+	if isCustom {
+		pattern = `[^a-zA-Z0-9\/\-\_\.\s]+`
+	} else {
+		pattern = `[^a-zA-Z0-9\s]+`
+	}
+
+	reg, err := regexp.Compile(pattern)
 	if err != nil {
 		log.Fatal(err)
 	}
-	processedStr := reg.ReplaceAllString(s, "")
+	processedStr := reg.ReplaceAllString(s, " ")
+	processedStr = strings.Join(strings.Fields(processedStr), " ")
 
 	var validBranchName string
 	switch convention {
