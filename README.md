@@ -34,7 +34,12 @@ $ gobranch
 ```
 $ go get github.com/ipanardian/GoBranch
 ```
-or just download the binary file on the release tab and add it to your ***$PATH*** or save it to ***/usr/local/bin***.
+
+### Executable file only
+- Open the [release](https://github.com/ipanardian/GoBranch/releases) section
+- Download binary files that match with your operating system (OS)
+- Change the name to "GoBranch" or "GoBranch.exe" for windows
+- add it to your ***$PATH*** environment variable, so you can run it from any location on the command line
 
 ## Naming Conventions
 ```
