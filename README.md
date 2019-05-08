@@ -40,6 +40,8 @@ $ go get github.com/ipanardian/GoBranch
 - Download binary files that match with your operating system (OS)
 - Change the name to "GoBranch" or "GoBranch.exe" for windows
 - add it to your ***$PATH*** environment variable, so you can run it from any location on the command line
+- On mac copy to /usr/local/bin
+- Then sudo chmod +x /usr/local/bin/GoBranch
 
 ## Naming Conventions
 ```
