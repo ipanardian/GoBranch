@@ -30,12 +30,12 @@ $ GoBranch
 ## Requirements
 * Git
 
-## Installation
+## Installation with Go
 ```
 $ go get github.com/ipanardian/GoBranch
 ```
 
-### Executable file only
+### Installation executable file only
 - Open the [release](https://github.com/ipanardian/GoBranch/releases) section
 - Download binary files that match with your operating system (OS)
 - Change the name to "GoBranch" or "GoBranch.exe" for windows
