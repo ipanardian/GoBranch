@@ -33,7 +33,7 @@ func InitializeApp(app *cli.App) {
 	app.Name = "GoBranch"
 	app.Usage = "A command line app to help you quickly creating git branch without hassle step."
 	app.UsageText = "Just type gobranch"
-	app.Version = "0.0.0.2"
+	app.Version = "0.1.0.0"
 	app.Author = "Ipan Ardian <https://github.com/ipanardian>"
 }
 
@@ -42,12 +42,12 @@ func SetFlags(app *cli.App) {
 	app.Flags = []cli.Flag{
 		cli.StringFlag{
 			Name:  "tc",
-			Value: "_",
+			Value: "",
 			Usage: "Set type convention ('/', '-', '_'). e.g feature/{branch}, feature-{branch} or feature_{branch}",
 		},
 		cli.StringFlag{
 			Name:  "nc",
-			Value: "snake",
+			Value: "",
 			Usage: "Set naming convention ('snake', 'kebab'). e.g branch_name or branch-name",
 		},
 	}
