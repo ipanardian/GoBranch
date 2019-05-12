@@ -15,14 +15,11 @@ $ GoBranch
 ```
 ![gobranch](https://user-images.githubusercontent.com/415225/44306664-cc81b880-a3bd-11e8-878f-73bc0551bfca.gif)
 
-## Custom
-![gobranch-custom](https://user-images.githubusercontent.com/415225/44306690-49ad2d80-a3be-11e8-9c2c-f626618486cc.gif)
-
 ## Features
 * You don't need to type a valid branch name
 * You don't need to checkout to the base branch
 * You don't need to git pull the base branch
-* Automatic prefixes such as feature, enhance, bugfix, hotfix
+* Automatic prefixes such as feature, enhance, bugfix, hotfix, release
 * Prevent the selected base branch from being wrong
 * Custom base branch
 * Custom naming conventions
@@ -35,7 +32,12 @@ $ GoBranch
 $ go get github.com/ipanardian/GoBranch
 ```
 
-### Installation executable file only
+## Update GoBranch
+```
+$ go get -u github.com/ipanardian/GoBranch
+```
+
+## Installation executable file only
 - Open the [release](https://github.com/ipanardian/GoBranch/releases) section
 - Download binary files that match with your operating system (OS)
 - Change the name to "GoBranch" or "GoBranch.exe" for windows
@@ -46,24 +48,25 @@ $ go get github.com/ipanardian/GoBranch
 ## Naming Conventions
 ```
 $ GoBranch --tc "/" --nc "snake"
-//output: feature/abcd_efgh
+//output: feature/abcd_efgh 
 
 $ GoBranch --tc "-" --nc "kebab"
 //output: feature-abcd-efgh
+
+//Default: feature/abcd_efgh 
 ```
 
-## Branch Structure
-The following is a branch of the gobranch structure, you must have a branch **development** and **hotfix**, unless you choose **custom** then there is no need to follow this diagram.
+## Branch Tree
+The following is a branch of the GoBranch tree, you must have a branch **development** and **hotfix**, unless you choose **custom** then there is no need to follow this diagram.
 ```
  -- master
     |-- development
-    |   |-- feature_{name}
-    |   |-- enhance_{name}
-    |   |-- bugfix_{name}
-    |   `-- test_{name}
+    |   |-- feature/{name}
+    |   |-- enhance/{name}
+    |   |-- bugfix/{name}
+    |   `-- test/{name}
     `-- hotfix
-        |-- hotfix_{name}
-        `-- hotfeature_{name}
+        |-- hotfix/{name}
 -- release
 ```
 
