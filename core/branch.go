@@ -34,13 +34,13 @@ import (
 
 //BranchType List predefined of BranchType
 type BranchType struct {
-	Feature    string
-	Enhance    string
-	Bugfix     string
-	Hotfix     string
-	Hotfeature string
-	Test       string
-	Custom     string
+	Feature string
+	Enhance string
+	Bugfix  string
+	Hotfix  string
+	Test    string
+	Release string
+	Custom  string
 }
 
 //BranchTypeMap Collection of base branch
@@ -67,7 +67,7 @@ var typeConvention = TypeConvention{
 }
 
 //Default TC
-var typeConventionSelected = typeConvention.Underscore
+var typeConventionSelected = typeConvention.ForwardSlash
 
 //namingConvention values
 var namingConvention = NamingConvention{
@@ -84,20 +84,20 @@ var branchType = BranchType{
 	"enhance",
 	"bugfix",
 	"hotfix",
-	"hotfeature",
 	"test",
+	"release",
 	"custom",
 }
 
 //branchTypeMap Init branchTypeMap
 var branchTypeMap = BranchTypeMap{
-	branchType.Feature:    "development",
-	branchType.Enhance:    "development",
-	branchType.Bugfix:     "development",
-	branchType.Hotfix:     "hotfix",
-	branchType.Hotfeature: "hotfix",
-	branchType.Test:       "development",
-	branchType.Custom:     "",
+	branchType.Feature: "development",
+	branchType.Enhance: "development",
+	branchType.Bugfix:  "development",
+	branchType.Hotfix:  "hotfix",
+	branchType.Test:    "development",
+	branchType.Release: "master",
+	branchType.Custom:  "",
 }
 
 //createBranchName Transform branch name
