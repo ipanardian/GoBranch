@@ -33,7 +33,7 @@ func InitializeApp(app *cli.App) {
 	app.Name = "GoBranch"
 	app.Usage = "A command line app to help you quickly creating git branch without hassle step."
 	app.UsageText = "Just type gobranch"
-	app.Version = "0.0.0.1"
+	app.Version = "0.1.0.0"
 	app.Author = "Ipan Ardian <https://github.com/ipanardian>"
 }
 
