@@ -67,7 +67,7 @@ var typeConvention = TypeConvention{
 }
 
 //Default TC
-var typeConventionSelected = typeConvention.Underscore
+var typeConventionSelected = typeConvention.ForwardSlash
 
 //namingConvention values
 var namingConvention = NamingConvention{

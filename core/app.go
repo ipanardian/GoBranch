@@ -42,12 +42,12 @@ func SetFlags(app *cli.App) {
 	app.Flags = []cli.Flag{
 		cli.StringFlag{
 			Name:  "tc",
-			Value: "_",
+			Value: "",
 			Usage: "Set type convention ('/', '-', '_'). e.g feature/{branch}, feature-{branch} or feature_{branch}",
 		},
 		cli.StringFlag{
 			Name:  "nc",
-			Value: "snake",
+			Value: "",
 			Usage: "Set naming convention ('snake', 'kebab'). e.g branch_name or branch-name",
 		},
 	}
