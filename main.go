@@ -25,8 +25,9 @@
 package main
 
 import (
-	"gobranch/core"
 	"os"
+
+	"github.com/ipanardian/GoBranch/core"
 
 	"github.com/urfave/cli"
 )
