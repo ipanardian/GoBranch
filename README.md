@@ -60,14 +60,15 @@ $ GoBranch --tc "-" --nc "kebab"
 The following is a branch of the GoBranch tree, you must have a branch **development** and **hotfix**, unless you choose **custom** then there is no need to follow this diagram.
 ```
  -- master
+ -- staging
     |-- development
     |   |-- feature/{name}
     |   |-- enhance/{name}
     |   |-- bugfix/{name}
     |   `-- test/{name}
     `-- hotfix
-        |-- hotfix/{name}
--- release
+        `-- hot/{name}
+-- production
 ```
 
 ## Flags
