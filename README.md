@@ -73,10 +73,10 @@ The following is a branch of the GoBranch tree, you must have a branch **develop
 
 ## Flags
 ```
-//show help
+//Show help
 $ GoBranch --help or -h
 
-//show version
+//Show version
 $ GoBranch --version or -v
 
 //Set type convention
