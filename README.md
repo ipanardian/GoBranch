@@ -1,6 +1,6 @@
 # GoBranch
 [![Go Report Card](https://goreportcard.com/badge/github.com/ipanardian/GoBranch)](https://goreportcard.com/report/github.com/ipanardian/GoBranch) 
-[![Release](https://img.shields.io/badge/release-v0.0.0.2-orange.svg)](https://github.com/ipanardian/gobranch/releases)
+[![Release](https://img.shields.io/badge/release-v0.0.0.3-orange.svg)](https://github.com/ipanardian/gobranch/releases)
 [![Status](https://img.shields.io/badge/status-beta-green.svg)](https://github.com/ipanardian/gobranch/releases)
 [![Go](https://img.shields.io/badge/go-v1.10.x-blue.svg)](https://gitter.im/ipanardian/gobranch)
 [![GitHub license](https://img.shields.io/badge/license-MIT-red.svg)](https://github.com/ipanardian/GoBranch/blob/master/LICENSE)
