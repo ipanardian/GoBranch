@@ -9,6 +9,8 @@
 
 A command line app to help you quickly creating git branch without hassle steps.
 
+#### THIS CLI APP IS NOT WORKING NEED TO BE UPDATED
+
 ## Usage
 ```
 $ GoBranch
